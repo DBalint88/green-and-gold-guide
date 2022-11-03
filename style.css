@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+td > input {
+    width: 100%;
+    border: none;
+}
+
+input::placeholder {
+    opacity: 50%;
+}
