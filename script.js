@@ -1,4 +1,10 @@
+import { title, html } from "admin.js";
+
 // Variables
+
+const adminButton = document.getElementById("admin-button");
+const content = document.getElementById("content");
+const subhead = document.getElementById("subhead");
 
 const lastNameField = document.getElementById("last-name-field");
 const gradeLevelField = document.getElementById("grade-level-field");
@@ -12,6 +18,12 @@ const counselor = document.getElementById("counselor");
 
 
 // Event Listeners
+
+adminButton.addEventListener("click", function() {
+    console.log("click")
+    subhead.innerHTML = butts;
+    content.innerHTML = html;
+})
 
 submitButton.addEventListener("click", function(e) {
     updateInfo(lastNameField.value.toLowerCase(), parseInt(gradeLevelField.value));

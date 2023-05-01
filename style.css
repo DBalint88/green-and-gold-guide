@@ -14,3 +14,44 @@ td > input {
 input::placeholder {
     opacity: 50%;
 }
+
+body {
+    display: grid;
+    grid-template-columns: 20rem 5fr;
+    grid-template-rows: 10rem 5rem 1fr;
+    grid-template-areas: 
+        "header header"
+        "subhead subhead"
+        "nav content";
+}
+
+header {
+    grid-area: header;
+    background-color: green;
+    text-align: center;
+}
+
+#subhead {
+    grid-area: subhead;
+    background-color: brown;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: blue;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 1rem;
+}
+
+#content {
+    grid-area: content;
+    background-color: blueviolet;
+}
+
